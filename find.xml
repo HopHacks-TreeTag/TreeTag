@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project 'TreeTag'" />
-    <option name="defaultScopeName" value="Project 'TreeTag'" />
-    <option name="SEARCH_SCOPE" value="Project 'TreeTag'" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
   </component>
 </application>
