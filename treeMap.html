@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), { 
+          center: new google.maps.LatLng(39.3, -76.6),
+          zoom: 12
+ });
+ 
+  var layer = new google.maps.FusionTablesLayer({
+    query: {
+      select: 'Location',
+      from: '1ZHzG6xwjQDHCUswV_X-297pauTUWd7ePMtwa7zyx'
+    }
+  });
+  layer.setMap(map);
+
+  } 
+
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaX6srRptEK_D0FIYXhuc0RmPShpC3abw&callback=initMap">
+    </script>
+  </body>
+</html>
